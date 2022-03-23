@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="primerio_app.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="txt_nome" Placeholder="Digite o seu Nome" />
+        <Entry x:Name="txt_altura" Placeholder="Digite a sua Altura" />
+        <Entry x:Name="txt_peso" Placeholder="Digite o seu Peso" />
+        <Button Text="Calcular IMC" Clicked="Button_Clicked" />
+
+        <Grid ColumnDefinitions="*, *" BackgroundColor="Aquamarine"
+          RowDefinitions="*, *, *, *, *, *, *">
+
+            <Label Grid.Row="0" Grid.Column="0" FontAttributes="Bold" FontSize="Medium"
+               Text="CLASSIFICAÇÃO" HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="Medium"
+               Text="IMC" HorizontalTextAlignment="Center" />
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Abaixo do peso  -->" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="Abaixo 18,5" HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Peso Normal  -->" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="18,5 - 24,9" HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Sobre Peso  -->" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="3" Grid.Column="1" Text="25 - 29,9" HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Obesidade Grau I -->" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="4" Grid.Column="1" Text="30 - 34,9" HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Obesidade Grau II -->" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="5" Grid.Column="1" Text="35 - 39,9" HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Text="Obesidade Grau III -->" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="6" Grid.Column="1" Text="Maior ou Igual a 40" HorizontalTextAlignment="Center"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
